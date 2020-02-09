@@ -15,7 +15,8 @@ namespace CourseManager.API.DbContexts
 
         public DbSet<Country> Countries { get; set; }
 
-        public CourseContext()
+        public CourseContext(DbContextOptions options)
+            : base(options)
         { }
     }
 }
